@@ -1,6 +1,6 @@
 <md-button>
   <yield />
   <script>
-    this.mixin('coreComponent')
+    this.mixin('$mdComponent')
   </script>
 </md-button>

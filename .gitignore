@@ -7,5 +7,7 @@
 nbproject
 Thumbs.db
 
+tmp/
+
 # NPM packages folder.
 node_modules/
