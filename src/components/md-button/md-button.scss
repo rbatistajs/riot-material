@@ -1,0 +1,26 @@
+$md-button-min-height: rem(3.60);
+$md-button-min-width: rem(6.4);
+
+$md-button-border-radius: rem(0.2);
+
+.md-button {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  font-size: $body-font-size;
+  font-weight: 500;
+
+  padding: 0 8px;
+  margin: 6px 8px;
+
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+
+  min-height: $md-button-min-height;
+  line-height: $md-button-min-height;
+  min-width: $md-button-min-width;
+
+  border-radius: $md-button-border-radius;
+}
