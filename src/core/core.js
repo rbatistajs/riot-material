@@ -4,7 +4,4 @@ import util from './scripts/util'
 
 var core = { pallete, theme, util };
 
-
-
-
 riot.material = core;

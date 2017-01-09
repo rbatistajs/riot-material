@@ -1,5 +1,6 @@
 
 .md-THEME_NAME-theme .md-button,
 .md-button.md-THEME_NAME-theme{
-  color: '{primary-color}'
+  background-color: '{primary-color}';
+  color: '{contrast-primary-color}';
 }

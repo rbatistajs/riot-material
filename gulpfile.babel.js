@@ -25,7 +25,7 @@ gulp.task('connect', () => {
 
 gulp.task('themes', function(cb) {
     return gulp.src('./src/**/*-theme.scss')
-    .pipe(concat('riot-material-themes.css'))
+    .pipe(concat('riot-material-theme.css'))
     .pipe(sass())
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -36,11 +36,11 @@ gulp.task('themes', function(cb) {
 
 gulp.task('scripts', ['themes'], () => {
 
-  var THEME_STYLES = fs.readFileSync('./tmp/riot-material-themes.css', 'utf8');
+  var THEME_CSS = fs.readFileSync('./tmp/riot-material-theme.css', 'utf8');
 
   var core = browserify('./src/core/core.js')
     .transform(envify({
-      THEME_STYLES: THEME_STYLES
+      THEME_CSS: THEME_CSS
     }))
     .transform(babelify)
     .bundle()
